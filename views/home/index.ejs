@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title>
+	<link rel="stylesheet" type="text/css" href="admin/style.css">
+</head>
+<body>
+	<div>
+		<h2>Welcome To Admin Dashboard, <%= user.username%></h2> 		
+	</div>
+
+	
+	<a href="/home/view_users">view users</a> |
+	<a href="/home/addUser">Add User</a> |
+	<a href="/home/addUser">Content List</a> |
+	<a href="/home/addUser">Request List</a> |
+	<!--<a href="/home/search">Search Here</a> |-->
+	<!--<form method="POST">
+        Search : <input type="text" name="search">
+        <input type="submit" value="Search" name="id">
+    </form>-->
+	<a href="/logout">Logout</a><br>
+	EmpName: <%= user.name%><br>
+	company: <%= user.companyName%><br>
+	contact: <%= user.contact%> <br>
+	Username:  <%= user.username %> <br>
+	Id: <%= user.id %> <br>
+	Password: <%= user.password %> <br>
+	Type: <%= user.type %>
+</body>
+</html>
